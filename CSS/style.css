@@ -1,0 +1,141 @@
+body {
+    margin: 0 auto;
+    padding: 1em;
+    width: auto;
+    font: normal 100%/1.5 monospace;
+    text-align: start;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    line-height: 1;
+  }
+  
+  a,
+  p {
+    color: yellow;
+  }
+  
+  form {
+    position: sticky;
+    top: 0;
+    z-index: 88;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5em;
+    background-color: #eee;
+    /* border: 2px outset turquoise; */
+    /* margin: auto -0.5em; */
+    height: 8vh;
+  }
+  
+  label,
+  input,
+  button {
+    font: inherit;
+    margin: 0 auto 0.5em;
+    padding: 0.25em;
+    flex: 1;
+  }
+  
+  form,
+  input {
+    color: black;
+  }
+  
+  input {
+    flex: 2 1 auto;
+    max-width: 100%;
+    border: 3px solid black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    caret-color: black;
+    background: #eee;
+    font-family: system-ui;
+  }
+  
+  button {
+   outline: none;
+   border: none;
+    color: white;
+    background-color: black;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  button:active,
+  button:focus {
+    background-color: #eee;
+    color: black;
+  }
+  
+  ol {
+    padding: 0;
+    list-style-position: inside;
+    font-size: smaller;
+    color: yellow;
+  }
+  
+  li {
+    padding: 0.125em 0.75em;
+  }
+  
+  li:before,
+  li:after {
+    color: turquoise;
+  }
+  
+  li:before {
+    content: "<";
+  }
+  
+  li:after {
+    content: ">";
+  }
+  
+  li:nth-child(odd) {
+    background-color: #eee;
+  }
+  
+  @media only screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+    }
+  
+    p,
+    form,
+    ol,
+    a {
+      color: whitesmoke;
+    }
+  
+    li:before,
+    li:after {
+      color: cadetblue;
+      margin: 0px 5px;
+    }
+  
+    form {
+      background-color: white;
+      color: black;
+    }
+  
+    li:nth-child(odd) {
+      background-color: #eee;
+      padding: 10px;
+      color: black;
+    }
+  }
+  
+  :focus-visible {
+    isolation: isolate;
+  }
+
+
+  li {
+    padding: 10px;
+    color: white;
+}
